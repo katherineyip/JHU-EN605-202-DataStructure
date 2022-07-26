@@ -1,0 +1,219 @@
+katherine@KatherinesMBP2 IdeaProjects % cd lab3
+katherine@KatherinesMBP2 lab3 % ls
+Analysis.pdf	lab3.iml	resources
+README.md	out		src
+katherine@KatherinesMBP2 lab3 % java src/HuffmanTree resources/FreqTable_unix.txt Decode resources/Encoded.txt
+***********************************************************************
+********************** START OF FREQ TABLE FILE ***********************
+***********************************************************************
+
+---------Printing Heap----------
+Q: 1
+J: 5
+X: 2
+K: 10
+V: 5
+Z: 3
+G: 14
+P: 13
+H: 17
+U: 15
+D: 11
+F: 12
+Y: 8
+N: 24
+O: 18
+A: 19
+I: 16
+R: 25
+S: 35
+E: 42
+T: 25
+B: 16
+W: 21
+L: 20
+C: 17
+M: 19
+------Finish Printing Heap------
+
+***********************************************************************
+*********************** END OF FREQ TABLE FILE ************************
+***********************************************************************
+
+***********************************************************************
+***************** PRINTING HUFFMAN TREE IN PREORDER: ******************
+***********************************************************************
+
+a.data is: Q. b.data is: X
+a.freq is: 1. b.freq is: 2
+newCombinedNode.leftChild Q. newCombinedNode.rightChild: X
+a.data is: Z. b.data is: QX
+a.freq is: 3. b.freq is: 3
+newCombinedNode.leftChild Z. newCombinedNode.rightChild: QX
+a.data is: J. b.data is: V
+a.freq is: 5. b.freq is: 5
+newCombinedNode.leftChild J. newCombinedNode.rightChild: V
+a.data is: QXZ. b.data is: Y
+a.freq is: 6. b.freq is: 8
+newCombinedNode.leftChild QXZ. newCombinedNode.rightChild: Y
+a.data is: K. b.data is: JV
+a.freq is: 10. b.freq is: 10
+newCombinedNode.leftChild K. newCombinedNode.rightChild: JV
+a.data is: D. b.data is: F
+a.freq is: 11. b.freq is: 12
+newCombinedNode.leftChild D. newCombinedNode.rightChild: F
+a.data is: P. b.data is: G
+a.freq is: 13. b.freq is: 14
+newCombinedNode.leftChild P. newCombinedNode.rightChild: G
+a.data is: QXYZ. b.data is: U
+a.freq is: 14. b.freq is: 15
+newCombinedNode.leftChild QXYZ. newCombinedNode.rightChild: U
+a.data is: B. b.data is: I
+a.freq is: 16. b.freq is: 16
+newCombinedNode.leftChild B. newCombinedNode.rightChild: I
+a.data is: C. b.data is: H
+a.freq is: 17. b.freq is: 17
+newCombinedNode.leftChild C. newCombinedNode.rightChild: H
+a.data is: O. b.data is: A
+a.freq is: 18. b.freq is: 19
+newCombinedNode.leftChild O. newCombinedNode.rightChild: A
+a.data is: M. b.data is: L
+a.freq is: 19. b.freq is: 20
+newCombinedNode.leftChild M. newCombinedNode.rightChild: L
+a.data is: JKV. b.data is: W
+a.freq is: 20. b.freq is: 21
+newCombinedNode.leftChild JKV. newCombinedNode.rightChild: W
+a.data is: DF. b.data is: N
+a.freq is: 23. b.freq is: 24
+newCombinedNode.leftChild DF. newCombinedNode.rightChild: N
+a.data is: R. b.data is: T
+a.freq is: 25. b.freq is: 25
+newCombinedNode.leftChild R. newCombinedNode.rightChild: T
+a.data is: GP. b.data is: QUXYZ
+a.freq is: 27. b.freq is: 29
+newCombinedNode.leftChild GP. newCombinedNode.rightChild: QUXYZ
+a.data is: BI. b.data is: CH
+a.freq is: 32. b.freq is: 34
+newCombinedNode.leftChild BI. newCombinedNode.rightChild: CH
+a.data is: S. b.data is: AO
+a.freq is: 35. b.freq is: 37
+newCombinedNode.leftChild S. newCombinedNode.rightChild: AO
+a.data is: LM. b.data is: JKVW
+a.freq is: 39. b.freq is: 41
+newCombinedNode.leftChild LM. newCombinedNode.rightChild: JKVW
+a.data is: E. b.data is: DFN
+a.freq is: 42. b.freq is: 47
+newCombinedNode.leftChild E. newCombinedNode.rightChild: DFN
+a.data is: RT. b.data is: GPQUXYZ
+a.freq is: 50. b.freq is: 56
+newCombinedNode.leftChild RT. newCombinedNode.rightChild: GPQUXYZ
+a.data is: BCHI. b.data is: AOS
+a.freq is: 66. b.freq is: 72
+newCombinedNode.leftChild BCHI. newCombinedNode.rightChild: AOS
+a.data is: JKLMVW. b.data is: DEFN
+a.freq is: 80. b.freq is: 89
+newCombinedNode.leftChild JKLMVW. newCombinedNode.rightChild: DEFN
+a.data is: GPQRTUXYZ. b.data is: ABCHIOS
+a.freq is: 106. b.freq is: 138
+newCombinedNode.leftChild GPQRTUXYZ. newCombinedNode.rightChild: ABCHIOS
+a.data is: DEFJKLMNVW. b.data is: ABCGHIOPQRSTUXYZ
+a.freq is: 169. b.freq is: 244
+newCombinedNode.leftChild DEFJKLMNVW. newCombinedNode.rightChild: ABCGHIOPQRSTUXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ: 413
+DEFJKLMNVW: 169
+JKLMVW: 80
+LM: 39
+M: 19
+L: 20
+JKVW: 41
+JKV: 20
+K: 10
+JV: 10
+J: 5
+V: 5
+W: 21
+DEFN: 89
+E: 42
+DFN: 47
+DF: 23
+D: 11
+F: 12
+N: 24
+ABCGHIOPQRSTUXYZ: 244
+GPQRTUXYZ: 106
+RT: 50
+R: 25
+T: 25
+GPQUXYZ: 56
+GP: 27
+P: 13
+G: 14
+QUXYZ: 29
+QXYZ: 14
+QXZ: 6
+Z: 3
+QX: 3
+Q: 1
+X: 2
+Y: 8
+U: 15
+ABCHIOS: 138
+BCHI: 66
+BI: 32
+B: 16
+I: 16
+CH: 34
+C: 17
+H: 17
+AOS: 72
+S: 35
+AO: 37
+O: 18
+A: 19
+
+***********************************************************************
+************************ PRINTING HUFFMAN CODE: ***********************
+***********************************************************************
+
+M: 0000
+L: 0001
+K: 00100
+J: 001010
+V: 001011
+W: 0011
+E: 010
+D: 01100
+F: 01101
+N: 0111
+R: 1000
+T: 1001
+P: 10100
+G: 10101
+Z: 1011000
+Q: 10110010
+X: 10110011
+Y: 101101
+U: 10111
+B: 11000
+I: 11001
+C: 11010
+H: 11011
+S: 1110
+O: 11110
+A: 11111
+
+***********************************************************************
+*********************** START OF DECODED FILE *************************
+***********************************************************************
+
+------------------------------------------------------
+Text from File: 01011001010110011111011011
+>> Decoded result: EIEIOH
+------------------------------------------------------
+Text from File: 10110000101010011011101101100010110010101100010111000110111
+>> Decoded result: ZEPHYRQZULU
+------------------------------------------------------
+Text from File: 11111110001000111111101011111011001111111000100011111000001010000001110010111
+>> Decoded result: ABRACADABRAMERLIN
+Total run time of the program is: 173135292 nanoseconds.
+katherine@KatherinesMBP2 lab3 % 

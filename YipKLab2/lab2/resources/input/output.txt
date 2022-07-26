@@ -1,0 +1,63 @@
+***********************************************************************
+************************* START OF INPUT FILE *************************
+***********************************************************************
+
+------------------------------------------------------
+Prefix Expression: -+ABC
+> Equivalent postfix Expression: AB+C-
+------------------------------------------------------
+Prefix Expression: -A+BC
+> Equivalent postfix Expression: ABC+-
+------------------------------------------------------
+Prefix Expression: $+-ABC+D-EF
+> Equivalent postfix Expression: AB-C+DEF-+$
+------------------------------------------------------
+Prefix Expression: -*A$B+C-DE*EF
+> Equivalent postfix Expression: ABCDE-+$*EF*-
+------------------------------------------------------
+Prefix Expression: **A+BC+C-BA
+> Equivalent postfix Expression: ABC+*CBA-+*
+------------------------------------------------------
+Prefix Expression: /A+BC +C*BA
+> ERROR: Invalid character found in prefix expression.
+------------------------------------------------------
+Prefix Expression: *-*-ABC+BA
+> ERROR: Invalid character found in prefix expression.
+------------------------------------------------------
+Prefix Expression: /+/A-BC-BA
+> ERROR: Invalid character found in prefix expression.
+------------------------------------------------------
+Prefix Expression: *$A+BC+C-BA
+> ERROR: Invalid character found in prefix expression.
+------------------------------------------------------
+Prefix Expression: //A+B0-C+BA
+> ERROR: Invalid character found in prefix expression.
+------------------------------------------------------
+Prefix Expression: *$A^BC+C-BA
+> ERROR: Invalid character found in prefix expression.
+------------------------------------------------------
+Prefix Expression:
+> ERROR: Invalid character found in prefix expression.
+------------------------------------------------------
+Prefix Expression:
+> ERROR: Invalid character found in prefix expression.
+------------------------------------------------------
+Prefix Expression:
+> ERROR: Invalid character found in prefix expression.
+------------------------------------------------------
+Prefix Expression:
+> ERROR: Invalid character found in prefix expression.
+------------------------------------------------------
+Prefix Expression:
+> ERROR: Invalid character found in prefix expression.
+------------------------------------------------------
+Prefix Expression:
+> ERROR: Invalid character found in prefix expression.
+
+***********************************************************************
+************************** END OF INPUT FILE **************************
+***********************************************************************
+
+Total run time of the program is: 106732792 nanoseconds.
+
+Process finished with exit code 0
